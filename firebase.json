@@ -1,0 +1,38 @@
+{
+  "hosting": {
+    "public": "/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+     "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }, 
+      {
+        "source": "/about",
+        "destination": "/about-us/index.html"
+      },  {
+        "source": "/contact",
+        "destination": "/contact/index.html"
+      }, {
+        "source": "/history",
+        "destination": "/history/index.html"
+      }, {
+        "source": "/philanthropy",
+        "destination": "/philanthropy/index.html"
+      }, {
+        "source": "/sanedo",
+        "destination": "/sanedo/index.html"
+      },{
+        "source": "/team",
+        "destination": "/team/index.html"
+      }
+      
+      
+      
+    ]
+  }
+}

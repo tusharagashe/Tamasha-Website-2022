@@ -1,0 +1,681 @@
+body {
+	background: black;
+	font-family: "Raleway",Arial,sans-serif;
+
+}
+
+@font-face {
+    font-family: futura-pt;
+    font-weight: 500;
+    src: url("assets/FuturaPTMedium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: futura-pt;
+    font-weight: 700;
+    src: url("assets/FuturaPTBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: futura-pt;
+    font-weight: 500;
+    font-style: italic;
+    src: url("assets/FuturaPTMediumOblique.otf") format("opentype");
+}
+
+@font-face {
+    font-family: futura-pt;
+    font-weight: 400;
+    font-style: italic;
+    src: url("assets/FuturaPTBookOblique.otf") format("opentype");
+}
+@font-face {
+    font-family: futura-pt;
+    font-weight: 400;
+    src: url("assets/FuturaPTBook.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: futura-pt;
+    font-style: italic;
+    src: url("assets/FuturaPTMediumOblique.otf") format("opentype");
+}
+
+
+
+.navbar {
+	position:absolute;
+	width: 100%;
+}
+
+.bg-primary{
+	background-color: transparent !important;
+}
+
+.navbar-nav {
+	margin-top: 32px;
+	transform: translateY(60px);
+	z-index: 100;
+}
+
+.navbar-toggler {
+	z-index: 100001;
+}
+
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #B6B6B6;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+.nav-item {
+	font-family: "futura-pt";
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1em;
+    color: rgba(255,255,255,.6);
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .nav-link:hover{
+	color: #ff9100;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+	color: #ff9100;
+}
+
+.navbar-nav .nav-link {
+	padding: 9px 12px !important;
+}
+
+.logoWrapper {
+	z-index: 10001;
+	position:absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	text-align: center;
+	margin-top: 20px;
+}
+
+.logoWrapper img{
+	width: 71px;
+}
+
+@media screen and (min-width: 1001px) {
+  .mleft-big {
+    margin-left: 150px;
+  }
+
+  .mright-big {
+  	margin-left: 95px;
+  }
+  .navbar-nav {
+	transform: translateY(0px);
+   }
+}
+
+
+.first {
+	height: 350px;
+}
+
+
+.coloroverlay {
+	position: absolute;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(16,8,6,.3);
+    z-index: 99;
+
+}
+
+@media screen and (max-width: 641px) {
+  .first {
+	height: 245px;
+   }
+
+   .coloroverlay{
+   	height: 245px;
+   }
+}
+.first > .coverimage {
+	background-image: url('assets/coronado-bridge-at-night1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.aboutus > .coverimage{
+	background-image: url('assets/ca-coastal-route.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+.sanedo > .coverimage{
+	background-image: url('assets/sandiegohouses.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+
+.philanthropy > .coverimage{
+	background-image: url('assets/NewLightIndia.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+.contact > .coverimage{
+	background-image: url('assets/heart-of-San-Diego.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+.history > .coverimage{
+	background-image: url('assets/pic3_big.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+
+.team > .coverimage{
+	background-image: url('assets/main_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+
+.page {
+	padding: 115px 34px ;
+	background-color: #3b3b3b;
+	color: white;
+}
+h1 {
+	font-family: "futura-pt";
+    font-size: 96px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.page > h1{
+	margin: 0px 200px;
+
+	margin-bottom: 29px;
+}
+.page > h3{
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+.page > p{
+	margin-top: 21px;
+}
+
+
+
+h3 {
+	text-align: center;
+
+	font-family: "futura-pt";
+    font-size: 25px;
+    line-height: .9em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+	font-family: "futura-pt";
+    font-size: 21px;
+    line-height: 1.75em;
+    letter-spacing: .4px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.iframecontainer{
+	padding: 17px;
+	text-align:center;
+}
+
+.block-content {
+	padding: 17px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.block-content > p{
+	margin-bottom: 21px;
+}
+
+.block-content  a{
+	color: white;
+	background-color:black;
+	padding: 1px;
+}
+
+.block-content.spacer-block{
+	height: 51px;
+}
+
+.block-content .row {
+	text-align: center;
+}
+.block-content p{
+	margin-top: 21px;
+}
+
+.aboutus .block-content p{
+	font-size: 19px;
+}
+
+
+.block-content img {
+	display:block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100%;
+	margin-top : 30px;
+}
+
+.block-content .col-6{
+	height: 300px;
+
+}
+
+footer {
+	height: 235px;
+	width: 100%;
+	padding: 68px 34px;
+}
+
+.social-media{
+	text-align: center;
+	width: auto;
+}
+
+.social-media a:hover{
+	color: black;
+}
+
+.icons {
+	display:inline-block;
+}
+
+.icons  svg{
+	fill:white;
+	height: 64px;
+	width: 64px;
+}
+.icons:hover   svg{
+	fill:rgba(255,255,255,.4);
+	height: 64px;
+	width: 64px;
+}
+
+.icons:hover  svg:hover{
+	fill:white;
+	height: 64px;
+	width: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+  	font-size: 48px;
+  	letter-spacing: 2px;
+  }
+  .block-content {
+  	margin: 0;
+  }
+  .page > h1{
+  	margin: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .page {
+  	padding: 40px 20px;
+  }
+
+  h1 {
+  	font-size: 34px;
+  	letter-spacing: 2px;
+  }
+
+  h3{
+  	font-size: 20px !important;
+  	line-height: 20px;
+  	    word-wrap: break-word;
+  }
+  h2{
+  	font-size: 26px !important;
+  	letter-spacing: 2px !important;
+  }
+ p{
+ 	font-size: 18px;
+ 	margin-bottom: 5px !important;
+ }
+	.block-content.spacer-block {
+	    height: 30px;
+	    padding: 10px;
+	}
+
+	.block-content{
+		padding: 5px 10px;
+
+	}
+blockquote{
+	font-size: 17px !important;
+}
+
+
+}
+
+iframe {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(33,150,243,.97);
+    transform: translateY(0);
+    margin: 0px;
+    text-align: center;
+    padding: 150px 0px;
+  }
+
+  .nav-item {
+    font-size: 30px;
+    padding: 6px 0px;
+  }
+
+}
+@media screen and (max-width: 640px) {
+  .nav-item {
+    font-size: 24px;
+    padding: 3px 0px;
+  }
+
+}
+
+.aboutus  .container, .sanedo .container, .philanthropy .container, .team .container
+, .history .container, .contact .container{
+	padding-top: 167px;
+	color: white;
+}
+
+
+h2{
+	font-family: "futura-pt";
+    font-size: 50px;
+    line-height: .8em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 0px;
+}
+
+blockquote {
+	margin: 0;
+    padding: .5em 2.5em;
+    font-style: italic;
+    border-left: 1px solid #fff;
+    word-wrap: break-word;
+    font-family: "futura-pt";
+    font-size: 21px;
+    line-height: 1.75em;
+    letter-spacing: .4px;
+    font-weight: 400;
+}
+
+.button {
+	box-shadow: 0 2px 0 0 #dcbb9c;
+	    background-color: #e7d0ba;
+    border-color: #e7d0ba;
+    color: #1b1b1b;
+    padding: 13px 26px;
+    font-family: "Abel";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover{
+	 text-decoration: none;
+	 background-color: #ebd8c5;
+}
+
+.button.white {
+	    box-shadow: 0 2px 0 0 #ebebeb;
+	    background-color: #fff;
+    border-color: #fff;
+    color: #111;
+        border-radius: 3px;
+            font-family: "futura-pt";
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.middle {
+	text-align: center;
+}
+
+
+img.placings {
+	margin-top: 0;
+	max-height: 352px;
+	width: 1012px;
+}
+
+.greysection {
+	padding: 100px 34px;
+	background: #3b3b3b;
+	color: white;
+	text-align: center;
+}
+
+.greysection h3{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.philanthropy h2{
+	font-size: 69px;
+}
+
+figcaption {
+	color: #ffdfc2;
+	font-family: "Abel";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    font-size: 20px;
+    text-align: center;
+}
+
+#swipebox-top-bar.visible-bars{
+	position:absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transform: translate(0);
+	background: transparent;
+}
+
+#swipebox-title{
+	transform: translateY(calc(100vh - 100% - 40px));
+	text-shadow: none;
+	background: rgba(0,0,0, .9);
+	padding: 30px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  #swipebox-title{
+  	padding: 30px 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #swipebox-title{
+  	padding: 30px 30px;
+  }
+
+  #swipebox-title p {
+	font-size: 14px;
+  }
+
+}
+
+figure {
+	cursor: pointer;
+	overflow:hidden;
+	text-align: center;
+}
+
+.figure-img{
+	object-fit: cover;
+	height: 100%;
+	max-height: 400px;
+	max-width: auto;
+	min-width: 100%;
+}
+
+
+.carousel-thumbnails .carousel-indicators img {
+    max-width: 100px;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+
+.carousel-thumbnails .carousel-indicators li {
+    height: auto;
+    max-width: 100px;
+    width: 100px;
+    border: none;
+	box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+	background-color: rgba(255,255,255,.25);
+}
+
+.carousel-thumbnails .carousel-indicators li.active {
+	border-bottom: 4px solid #fff;
+}
+
+.carousel-indicators {
+	position:relative;
+}
+
+.carousel-item {
+
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-thumbnails  .carousel-indicators img{
+  	display: none !important;
+  }
+  .carousel-indicators {
+	position:auto;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .carousel-item{
+  	height: 590px;
+  }
+}
+
+.history p {
+	font-size: 19px;
+}
+
+.contact h3{
+	font-size: 29px;
+}
+
+.contact .middle {
+	margin-bottom: 15px;
+}
+.mw {
+	max-width: 100%;
+}
