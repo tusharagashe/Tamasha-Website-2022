@@ -241,9 +241,20 @@ body {
 
 .page {
 	padding: 115px 34px ;
-	background-color: #3b3b3b;
+	background-color: hsl(210, 1%, 45%);
 	color: white;
+	display: inline-block;
 }
+
+.gofundme {
+	background-color: hsl(0, 0%, 0%);
+}
+
+.origin {
+	background-color: hsl(210, 89%, 76%);
+}
+
+
 h1 {
 	font-family: "futura-pt";
     font-size: 96px;
@@ -252,29 +263,35 @@ h1 {
     letter-spacing: 25px;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
+		text-align: left;
+		margin-bottom: 20px;
+		
 }
 
-.page > h1{
-	margin: 0px 200px;
-
-	margin-bottom: 29px;
-}
-.page > h3{
-	margin-top: 24px;
-	margin-bottom: 8px;
-}
-.page > p{
-	margin-top: 21px;
+p1 {
+	font-family:"futura-pt" ;
+	font-size: 35px;
 }
 
+.page > div {
+	display:flex;
+}
+
+.lineup-title > h3 {
+	text-align:left;
+}
+.page > p {
+	text-align:left;
+	font-size: 96px;
+
+}
 
 
 h3 {
 	text-align: center;
 
 	font-family: "futura-pt";
-    font-size: 25px;
+    font-size: 40px;
     line-height: .9em;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -284,7 +301,7 @@ h3 {
 
 p {
 	font-family: "futura-pt";
-    font-size: 21px;
+    font-size: 35px;
     line-height: 1.75em;
     letter-spacing: .4px;
     font-weight: 400;
@@ -309,7 +326,7 @@ p {
 
 .block-content  a{
 	color: white;
-	background-color:black;
+	background-color:rgb(59, 147, 247);
 	padding: 1px;
 }
 
@@ -338,6 +355,10 @@ p {
 	margin-top : 30px;
 }
 
+.show-tickets {
+	margin-bottom: 20px;
+}
+
 .block-content .col-6{
 	height: 300px;
 
@@ -347,11 +368,17 @@ footer {
 	height: 235px;
 	width: 100%;
 	padding: 68px 34px;
+	left:0;
+	right:0;
+	bottom:0;
 }
 
 .social-media{
 	text-align: center;
 	width: auto;
+	left:0;
+	right:0;
+	bottom:0;
 }
 
 .social-media a:hover{
@@ -417,11 +444,13 @@ footer {
  }
 	.block-content.spacer-block {
 	    height: 30px;
-	    padding: 10px;
+			padding: 10px;
+			float: bottom;
 	}
 
 	.block-content{
 		padding: 5px 10px;
+		float: bottom;
 
 	}
 blockquote{
